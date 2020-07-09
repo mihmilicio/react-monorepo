@@ -3,5 +3,12 @@
   "private": true,
   "devDependencies": {
     "lerna": "^3.22.1"
+  },
+  "scripts": {
+    "setup": "npm install && lerna bootstrap --hoist",
+    "next:dev": "lerna run dev --scope=my-next-app",
+    "cra:start": "lerna run start --scope=my-cra-app",
+    "next:build": "lerna run build --scope=my-next-app",
+    "cra:build": "lerna run build --scope=my-cra-app"
   }
 }
